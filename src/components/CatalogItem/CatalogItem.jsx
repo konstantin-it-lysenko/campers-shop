@@ -1,4 +1,11 @@
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { selectFavorites } from '../../redux/catalog/catalogSelectors';
+import {
+  addToFavorites,
+  removeFromFavorites,
+} from '../../redux/catalog/catalogSlice';
+import Popup from 'components/Popup';
 import sprite from '../../assets/icons/symbol-defs.svg';
 import {
   Card,
@@ -18,10 +25,10 @@ import {
   RevWrap,
   ShowMoreBtn,
 } from './CatalogItem.styled';
-import Popup from 'components/Popup';
 
 const CatalogItem = ({ card }) => {
   const {
+    _id,
     gallery,
     name,
     price,
@@ -37,6 +44,9 @@ const CatalogItem = ({ card }) => {
 
   const [isPopupClicked, setIsPopupClicked] = useState(false);
 
+  const dispatch = useDispatch();
+  const favorites = useSelector(selectFavorites);
+
   const handleOpenCard = () => {
     setIsPopupClicked(true);
     document.body.style.overflow = 'hidden';
@@ -47,6 +57,17 @@ const CatalogItem = ({ card }) => {
     document.body.style.overflow = 'auto';
   };
 
+  const isCardFavorite = useMemo(
+    () => favorites.find(item => item._id === _id),
+    [favorites, _id]
+  );
+
+  const handleAddToFavorite = () => {
+    isCardFavorite
+      ? dispatch(removeFromFavorites(_id))
+      : dispatch(addToFavorites(card));
+  };
+
   return (
     <Card>
       <CardImage src={gallery[0]} alt={name} />
@@ -55,7 +76,7 @@ const CatalogItem = ({ card }) => {
           <CardTitle>{name}</CardTitle>
           <PriceFavWrap>
             <Price>&#x20AC;{price.toFixed(2)}</Price>
-            <FavBtn>
+            <FavBtn onClick={handleAddToFavorite}>
               <svg width={22} height={22}>
                 <use xlinkHref={`${sprite}#icon-heart`}></use>
               </svg>
