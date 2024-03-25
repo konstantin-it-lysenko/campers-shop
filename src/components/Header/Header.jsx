@@ -1,4 +1,3 @@
-import { Wrapper } from '../../layout/SharedLayout/SharedLayout.styled';
 import { HeaderT, Link, NavList } from './Header.styled';
 
 const Header = () => {
