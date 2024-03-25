@@ -23,7 +23,7 @@ import Features from 'components/Features';
 const Popup = ({ card, onClose }) => {
   const { gallery, name, price, reviews, location, description, rating } = card;
 
-  const [isActiveTab, setIsActiveTab] = useState('');
+  const [isActiveTab, setIsActiveTab] = useState('features');
 
   const handleOnEscapeClose = e => {
     if (e.code === 'Escape') {
@@ -39,7 +39,7 @@ const Popup = ({ card, onClose }) => {
     setIsActiveTab('reviews');
   };
 
-  const handleOnBackdropClick = e => {
+  const handleOnBackdropClick = () => {
     onClose();
   };
 
@@ -57,7 +57,7 @@ const Popup = ({ card, onClose }) => {
           <CamperTitle>{name}</CamperTitle>
           <span>
             <button onClick={onClose}>
-              <svg width={28} height={28}>
+              <svg width={28} height={28} stroke="black">
                 <use xlinkHref={`${sprite}#icon-cross`}></use>
               </svg>
             </button>
