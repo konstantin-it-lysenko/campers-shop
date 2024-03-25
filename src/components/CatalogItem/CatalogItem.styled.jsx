@@ -41,6 +41,18 @@ export const Price = styled.p`
   line-height: 30px;
 `;
 
+export const FavBtn = styled.button`
+  svg {
+    stroke: black;
+
+    &:hover {
+      & use {
+        stroke: ${theme.colors.red};
+      }
+    }
+  }
+`;
+
 export const CardInfoList = styled.ul`
   margin: 8px 0 24px;
   display: flex;
