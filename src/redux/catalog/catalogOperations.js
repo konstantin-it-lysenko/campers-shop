@@ -26,10 +26,18 @@ export const getTotal = createAsyncThunk(
     }
 )
 
-export const bookForm = createAsyncThunk('catalog/bookForm', async (data, thunkApi) => {
+export const bookForm = createAsyncThunk('catalog/bookForm', async (data, thunkAPI) => {
     try {
         await axiosinstance.post(ENDPOINTS.BOOK, data)
     } catch (error) {
-        return thunkApi.rejectWithValue(error)
+        return thunkAPI.rejectWithValue(error)
+    }
+})
+
+export const filterCatalog = createAsyncThunk('catalog/filter', async (data, thunkAPI) => {
+    try {
+
+    } catch (error) {
+        return thunkAPI.rejectWithValue(error)
     }
 })
