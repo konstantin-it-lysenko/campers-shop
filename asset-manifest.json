@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/campers-shop/static/css/main.e434e498.css",
-    "main.js": "/campers-shop/static/js/main.08c17e7b.js",
+    "main.css": "/campers-shop/static/css/main.75362c9d.css",
+    "main.js": "/campers-shop/static/js/main.fcfeb1fb.js",
     "static/media/Inter-SemiBold.ttf": "/campers-shop/static/media/Inter-SemiBold.6058d3da655fb35169c2.ttf",
     "static/media/Inter-Medium.ttf": "/campers-shop/static/media/Inter-Medium.3f7acfe50aad7ad68548.ttf",
     "static/media/Inter-Regular.ttf": "/campers-shop/static/media/Inter-Regular.9ca9ba81e9dcaa12b3a1.ttf",
     "static/media/symbol-defs.svg": "/campers-shop/static/media/symbol-defs.5dd72b32901294709927f884b01e2576.svg",
     "index.html": "/campers-shop/index.html",
-    "main.e434e498.css.map": "/campers-shop/static/css/main.e434e498.css.map",
-    "main.08c17e7b.js.map": "/campers-shop/static/js/main.08c17e7b.js.map"
+    "main.75362c9d.css.map": "/campers-shop/static/css/main.75362c9d.css.map",
+    "main.fcfeb1fb.js.map": "/campers-shop/static/js/main.fcfeb1fb.js.map"
   },
   "entrypoints": [
-    "static/css/main.e434e498.css",
-    "static/js/main.08c17e7b.js"
+    "static/css/main.75362c9d.css",
+    "static/js/main.fcfeb1fb.js"
   ]
 }
