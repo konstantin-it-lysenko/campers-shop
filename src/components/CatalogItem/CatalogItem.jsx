@@ -6,6 +6,7 @@ import {
   CardInfoList,
   CardTitle,
   Description,
+  FavBtn,
   GeneralInfoItem,
   GeneralInfoList,
   HeadWrap,
@@ -54,11 +55,11 @@ const CatalogItem = ({ card }) => {
           <CardTitle>{name}</CardTitle>
           <PriceFavWrap>
             <Price>&#x20AC;{price.toFixed(2)}</Price>
-            <button>
-              <svg width={22} height={22} stroke="black">
+            <FavBtn>
+              <svg width={22} height={22}>
                 <use xlinkHref={`${sprite}#icon-heart`}></use>
               </svg>
-            </button>
+            </FavBtn>
           </PriceFavWrap>
         </HeadWrap>
         <CardInfoList>
