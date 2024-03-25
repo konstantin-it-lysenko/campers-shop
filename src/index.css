@@ -1,24 +1,37 @@
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #e44848;
+  border-radius: 20px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
 @font-face {
-  font-family: "Inter";
-  src: local("Inter"),
-    url("./assets/fonts/Inter-Regular.ttf") format("truetype");
+  font-family: 'Inter';
+  src: local('Inter'),
+    url('./assets/fonts/Inter-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Inter";
-  src: local("Inter"), url("./assets/fonts/Inter-Medium.ttf") format("truetype");
+  font-family: 'Inter';
+  src: local('Inter'), url('./assets/fonts/Inter-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Inter";
-  src: local("Inter"),
-    url("./assets/fonts/Inter-SemiBold.ttf") format("truetype");
+  font-family: 'Inter';
+  src: local('Inter'),
+    url('./assets/fonts/Inter-SemiBold.ttf') format('truetype');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
