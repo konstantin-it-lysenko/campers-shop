@@ -20,9 +20,17 @@ const CamperList = () => {
     dispatch(getAllCatalog(page));
   }, [dispatch, page]);
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+    });
+  };
+
   const handleLoadMoreBtn = () => {
+    scrollToTop();
+
     if (page * limit >= total) {
-      setPage(1);
+      return setPage(1);
     }
 
     setPage(prev => prev + 1);
