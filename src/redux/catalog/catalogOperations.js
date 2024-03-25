@@ -6,7 +6,7 @@ export const getAllCatalog = createAsyncThunk(
     'catalog/getAll', async (page, thunkAPI) => {
         try {
             const { data } = await axiosinstance.get(`${ENDPOINTS.ADVERTS}?page=${page}&limit=${limit}`)
-            console.log(data);
+
             return data;
         } catch (error) {
             return thunkAPI.rejectWithValue(error)
