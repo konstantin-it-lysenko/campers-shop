@@ -79,7 +79,7 @@ const Popup = ({ card, onClose }) => {
             {location.split(',').reverse().join(', ')}
           </LocWrap>
         </RevLocWrap>
-        <Price>&#x20AC;{price}</Price>
+        <Price>&#x20AC;{price.toFixed(2)}</Price>
 
         <ModalScrollWrap>
           <CamperImgList>
