@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/campers-shop/static/css/main.e434e498.css",
-    "main.js": "/campers-shop/static/js/main.dd0862c5.js",
+    "main.js": "/campers-shop/static/js/main.601c410b.js",
     "static/media/Inter-SemiBold.ttf": "/campers-shop/static/media/Inter-SemiBold.6058d3da655fb35169c2.ttf",
     "static/media/Inter-Medium.ttf": "/campers-shop/static/media/Inter-Medium.3f7acfe50aad7ad68548.ttf",
     "static/media/Inter-Regular.ttf": "/campers-shop/static/media/Inter-Regular.9ca9ba81e9dcaa12b3a1.ttf",
     "static/media/symbol-defs.svg": "/campers-shop/static/media/symbol-defs.614bf4ce57cb92c62bde816d98f083d6.svg",
     "index.html": "/campers-shop/index.html",
     "main.e434e498.css.map": "/campers-shop/static/css/main.e434e498.css.map",
-    "main.dd0862c5.js.map": "/campers-shop/static/js/main.dd0862c5.js.map"
+    "main.601c410b.js.map": "/campers-shop/static/js/main.601c410b.js.map"
   },
   "entrypoints": [
     "static/css/main.e434e498.css",
-    "static/js/main.dd0862c5.js"
+    "static/js/main.601c410b.js"
   ]
 }
