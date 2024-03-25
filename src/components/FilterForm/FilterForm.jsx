@@ -77,15 +77,14 @@ const FilterForm = () => {
     dispatch(filterCatalog({ ...formData }));
   };
 
-  const { values, errors, touched, handleBlur, handleChange, handleSubmit } =
-    useFormik({
-      initialValues: {
-        location: 'Kyiv, Ukraine',
-        equipment: '',
-        type: '',
-      },
-      onSubmit,
-    });
+  const { values, handleBlur, handleChange, handleSubmit } = useFormik({
+    initialValues: {
+      location: 'Kyiv, Ukraine',
+      equipment: '',
+      type: '',
+    },
+    onSubmit,
+  });
 
   return (
     <FormUi onSubmit={handleSubmit}>
